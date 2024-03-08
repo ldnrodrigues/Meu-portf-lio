@@ -1,0 +1,25 @@
+.navbar {
+    background-color: black !important;
+}
+
+/* Altera a cor do link na barra de navegação para branco */
+
+.navbar-nav a {
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: rgb(0,140,255) !important;
+}
+
+.navbar-btn {
+    font-size: 12px; /* Ajuste o tamanho conforme necessário */
+    padding: 10px 10px !important; /* Ajuste o padding conforme necessário */
+    margin-right: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.navbar {
+    background-color: transparent;
+}
