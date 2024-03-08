@@ -1,0 +1,104 @@
+@import url(css/navbar.css);
+@import url(css/footer.css);
+
+body {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    font-family: 'Arial', sans-serif;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%; /* Ajuste conforme necessário */
+    padding: 50px; /* Ajuste conforme necessário */
+    margin-left: 10rem;
+    margin-top: 7.5rem;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.acento {
+    color: rgb(0,140,255);
+}
+
+.shadow_btn {
+    margin-top: 1.5rem;
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: box-shadow 0.3s ease-in-out; 
+    background-color: rgb(0,140,255);
+    box-shadow: 0 0 25px rgb(0,140,255);
+}
+
+.shadow_btn:hover {
+    box-shadow: 
+        0 0 5px rgb(0,140,255),
+        0 0 25px rgb(0,140,255),
+        0 0 50px rgb(0,140,255),
+        0 0 100px rgb(0,140,255);
+}
+
+.about-me {
+    background-color: #4d4d4d;
+}
+
+.foto-moldura {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.Linguas-logo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+#image-zoom {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+#image-zoom {
+    transition: transform 0.3s;
+}
+
+#image-zoom:hover {
+    transform: scale(1.1); /* Ajuste o valor para controlar o zoom */
+    cursor: pointer;
+}
+
+@media (max-width: 991px) {
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: centers;
+        margin-left: 0;
+        margin-top: 5rem;
+        width: 100%;
+    }
+}
