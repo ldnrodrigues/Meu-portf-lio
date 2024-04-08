@@ -47,49 +47,16 @@ body {
     font-size: 17px;
     color: #fff;
     border-radius: 7px;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     font-weight: 700;
     text-transform: uppercase;
     transition: box-shadow 0.3s ease-in-out; 
-    background-color: rgb(0,140,255);
+    background-color: #008CFF;
     box-shadow: 0 0 25px rgb(0,140,255);
 }
 
 .shadow_btn:hover {
-    box-shadow: 
-        0 0 5px rgb(0,140,255),
-        0 0 25px rgb(0,140,255),
-        0 0 50px rgb(0,140,255),
-        0 0 100px rgb(0,140,255);
-}
-
-.about-me {
-    background-color: #4d4d4d;
-}
-
-.foto-moldura {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-}
-
-.Linguas-logo {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: baseline;
-}
-
-#image-zoom {
-    display: block;
-    overflow: hidden;
-    position: relative;
-}
-
-#image-zoom {
-    transition: transform 0.3s;
-}
-
-#image-zoom:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+    box-shadow: 0 0 25px rgba(0, 140, 255, 0.6);
 }
 
 #star-container {
@@ -133,6 +100,19 @@ body {
     }
 }
 
+.card {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.card-img-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+}
+
 .pagination {
 	position: relative;
 	display: flex;
@@ -143,7 +123,7 @@ body {
 	--pm: #008CFF;
 }
 
-label {
+#points {
 	content: '';
 	margin: 0 10px;
 	height: var(--ddim);
@@ -157,40 +137,46 @@ label:last-child {margin-right: 0;}
 input {display: none;}
 
 .pacman {
-	content: '';
-	position: absolute;
-	top: calc(-1*var(--ddim));
-	left: calc(-1*var(--ddim)/2);
-	height: var(--rdim);
-	width: var(--rdim);
-	transition: transform 250ms linear;
+    content: '';
+    position: absolute;
+    top: calc(-1*var(--ddim));
+    left: calc(-1*var(--ddim)/2);
+    height: var(--rdim);
+    width: var(--rdim);
+    transition: transform 250ms linear;
+    /* Adicionando transformação para quando a classe 'back' for adicionada */
+    transform: rotate(0deg);
+}
+
+.pacman.back {
+    transform: rotateY(180deg); /* Faz o pacman virar para trás */
 }
 
 .pacman:before,
 .pacman:after {
-	content: '';
-	position: absolute;
-	height: var(--rd);
-	width: var(--rdim);
-	left: 0;
-	background: var(--pm);
-	transition: inherit;
+    content: '';
+    position: absolute;
+    height: var(--rd);
+    width: var(--rdim);
+    left: 0;
+    background: var(--pm);
+    transition: inherit;
 }
 
 .pacman:before {
-	top: 0;
-	border-top-left-radius: var(--rdim);
-	border-top-right-radius: var(--rdim);
-	transform-origin: bottom center;
-	transform: rotate(-45deg);
+    top: 0;
+    border-top-left-radius: var(--rdim);
+    border-top-right-radius: var(--rdim);
+    transform-origin: bottom center;
+    transform: rotate(-45deg);
 }
 
 .pacman:after {
-	bottom: 0;
-	border-bottom-left-radius: var(--rdim);
-	border-bottom-right-radius: var(--rdim);
-	transform-origin: top center;
-	transform: rotate(45deg);
+    bottom: 0;
+    border-bottom-left-radius: var(--rdim);
+    border-bottom-right-radius: var(--rdim);
+    transform-origin: top center;
+    transform: rotate(45deg);
 }
 
 @keyframes waka {
@@ -212,6 +198,35 @@ input[id="dot-5"]:checked ~ .pacman {transform: translateX(calc(var(--ddim) + va
 input[id="dot-6"]:checked ~ .pacman {transform: translateX(calc(var(--ddim) + var(--rdim)*5));}
 input[id="dot-7"]:checked ~ .pacman {transform: translateX(calc(var(--ddim) + var(--rdim)*6));}
 input[id="dot-8"]:checked ~ .pacman {transform: translateX(calc(var(--ddim) + var(--rdim)*7));}
+
+.about-me {
+    background-color: #4D4D4D;
+}
+
+.foto-moldura {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.Linguas-logo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+#image-zoom {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+#image-zoom {
+    transition: transform 0.3s;
+}
+
+#image-zoom:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
 
 .hr-text {
     line-height: 1em;
@@ -244,6 +259,37 @@ input[id="dot-8"]:checked ~ .pacman {transform: translateX(calc(var(--ddim) + va
     padding: 0 .5em;
     line-height: 1.5em;
     background-color: #4D4D4D;
+}
+
+.form-signin {
+    margin: auto;
+    width: 330px;
+    background-color: #000000;
+    transition: box-shadow 280ms cubic-bezier(.4,0,.2,1);
+    position: relative;
+    display: grid;
+    border-radius: 8px;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+    max-width: 400px;
+    padding: 1rem;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: 10px;
+    border-color: #535353;
+    background-color: #0D1117;
+    color: #ffffff;
+}
+
+#comment {
+    margin-bottom: 10px;
+    border-color: #535353;
+    background-color: #0D1117;
+    color: #ffffff;
 }
 
 @media (max-width: 991px) {
