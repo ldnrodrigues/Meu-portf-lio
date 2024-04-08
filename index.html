@@ -64,14 +64,14 @@
 
 <div id="star-container">
   <div id="star-pattern"></div>
-    <div class="bg-dark text-secondary py-4 text-center" id="projetos-recentes">
+    <div class="text-secondary py-4 text-center" id="projetos-recentes" style="background-color: #141414;">
       <h1 class="display-5 fw-bold text-white" data-aos="zoom-in" data-aos-duration="1500">Projetos Recentes</h1><br>
         <div class="container text-center">
           <div class="row align-items-center">
-            
+
             <div class="col">
               <div class="card" style="width: 400px;">
-                <img class="card-img-top" src="Imagens/projetos/projeto-memorial.JPG" alt="Card image" style="width: 100%; height: auto;">
+                <img class="card-img-top" src="Imagens/projetos/projeto-memorial.JPG" alt="Card image" style="width: 100%; height: auto;" id="image-zoom">
                   <div class="ver-projeto mb-1">
                     <h4 class="card-title">Memorial do TJRS</h4>
                     <a href="#" class="btn btn-primary">Ver Projeto</a>
@@ -81,7 +81,7 @@
 
             <div class="col">
               <div class="card" style="width: 400px;">
-                <img class="card-img-top" src="Imagens/projetos/projeto-calculadora-imc.JPG " alt="Card image" style="width: 100%; height: auto;">
+                <img class="card-img-top" src="Imagens/projetos/projeto-calculadora-imc.JPG " alt="Card image" style="width: 100%; height: auto;" id="image-zoom">
                   <div class="ver-projeto mb-1">
                     <h4 class="card-title">Calculadora de IMC</h4>
                     <a href="#" class="btn btn-primary">Ver Projeto</a>
@@ -91,7 +91,7 @@
 
             <div class="col">
               <div class="card" style="width: 400px;">
-                <img class="card-img-top" src="Imagens/projetos/projeto-calculadora-imc.JPG " alt="Card image" style="width: 100%; height: auto;">
+                <img class="card-img-top" src="Imagens/projetos/projeto-calculadora-imc.JPG " alt="Card image" style="width: 100%; height: auto;" id="image-zoom">
                   <div class="ver-projeto mb-1">
                     <h4 class="card-title">Calculadora de IMC</h4>
                     <a href="#" class="btn btn-primary">Ver Projeto</a>
@@ -101,7 +101,7 @@
 
             <div class="col mt-4">
               <div class="card" style="width: 400px;">
-                <img class="card-img-top" src="Imagens/projetos/projeto-calculadora-imc.JPG " alt="Card image" style="width: 100%; height: auto;">
+                <img class="card-img-top" src="Imagens/projetos/projeto-calculadora-imc.JPG " alt="Card image" style="width: 100%; height: auto;" id="image-zoom">
                   <div class="ver-projeto mb-1">
                     <h4 class="card-title">Calculadora de IMC</h4>
                     <a href="#" class="btn btn-primary">Ver Projeto</a>
@@ -111,7 +111,7 @@
 
             <div class="col mt-4">
               <div class="card" style="width: 400px;">
-                <img class="card-img-top" src="Imagens/projetos/projeto-calculadora-imc.JPG " alt="Card image" style="width: 100%; height: auto;">
+                <img class="card-img-top" src="Imagens/projetos/projeto-calculadora-imc.JPG " alt="Card image" style="width: 100%; height: auto;" id="image-zoom">
                   <div class="ver-projeto mb-1">
                     <h4 class="card-title">Calculadora de IMC</h4>
                     <a href="#" class="btn btn-primary">Ver Projeto</a>
@@ -121,7 +121,7 @@
 
             <div class="col mt-4">
               <div class="card" style="width: 400px;">
-                <img class="card-img-top" src="Imagens/projetos/projeto-calculadora-imc.JPG " alt="Card image" style="width: 100%; height: auto;">
+                <img class="card-img-top" src="Imagens/projetos/projeto-calculadora-imc.JPG " alt="Card image" style="width: 100%; height: auto;" id="image-zoom">
                   <div class="ver-projeto mb-1">
                     <h4 class="card-title">Calculadora de IMC</h4>
                     <a href="#" class="btn btn-primary">Ver Projeto</a>
@@ -132,21 +132,21 @@
             <div class="container fluid d-flex justify-content-center mt-5 mb-4">
               <div class="pagination">	
                 <input id="dot-1" type="radio" name="dots">	
-                <label for="dot-1"></label>	
+                <label id="points" for="dot-1"></label>	
                 <input id="dot-2" type="radio" name="dots">
-                <label for="dot-2"></label>	
+                <label id="points" for="dot-2"></label>	
                 <input id="dot-3" type="radio" name="dots" checked="checked">
-                <label for="dot-3"></label>	
+                <label id="points" for="dot-3"></label>	
                 <input id="dot-4" type="radio" name="dots">
-                <label for="dot-4"></label>	
+                <label id="points" for="dot-4"></label>	
                 <input id="dot-5" type="radio" name="dots">
-                <label for="dot-5"></label>	
+                <label id="points" for="dot-5"></label>	
                 <input id="dot-6" type="radio" name="dots">
-                <label for="dot-6"></label>	
+                <label id="points" for="dot-6"></label>	
                 <input id="dot-7" type="radio" name="dots">
-                <label for="dot-7"></label>	
+                <label id="points" for="dot-7"></label>	
                 <input id="dot-8" type="radio" name="dots">
-                <label for="dot-8"></label>
+                <label id="points" for="dot-8"></label>
                 <div class="pacman"></div>
               </div>
             </div>
@@ -160,13 +160,13 @@
 
 <div class="container-fluid about-me">
   <div class="row">
-    <div class="col-6">
-      <img src="Imagens/about-me.jpg" class="img-fluid img-thumbnail foto-moldura mx-auto d-block" alt="Foto_minha" id="image-zoom" loading="lazy" width="408px" height="616" style="margin-bottom: 3rem; margin-top: 3rem;">
+    <div class="col-6 d-flex justify-content-center align-items-center">
+      <img src="Imagens/about-me.jpg" class="img-fluid img-thumbnail foto-moldura d-block" alt="Foto_minha" id="image-zoom" loading="lazy" width="408px" height="616" style="margin-bottom: 3rem; margin-top: 3rem;">
     </div>
 
     <div class="col-4 text-light mt-5">
       <hr class="hr-text d-none d-sm-block mt-5" data-content="SOBRE MIM" id="sobre-mim">
-        <p class="fs-6 mb-5">
+        <p class="mb-5">
           Me chamo Leonardo Rodrigues, tenho 20 anos e moro em Gravataí, no Rio Grande do Sul. No momento, estou aprimorando minhas habilidades no desenvolvimento de sites Front-End, 
           enquanto concluo meu ensino superior. <br><br>
           Desde pequeno, sempre me interessei muito por computadores. Desenvolvi uma afinidade prática com HTML, CSS, Bootstrap e Wordpress, e tenho um domínio avançado do inglês. Estou sempre aberto a evoluir, 
@@ -184,6 +184,41 @@
       </div>
     </div>
   </div>
+
+  <div class="container-fluid" style="background-color: #5a5959;">
+    <div class="row">
+        <div class="col-6 d-flex justify-content-center align-items-center">
+            <img src="Imagens/email-ilustration.svg" class="img-fluid d-block" alt="Ilustração" loading="lazy" width="408px" height="616">
+        </div>
+
+        <div class="col-4 text-light d-flex mt-5 mb-5">
+            <div class="form-signin w-100 m-auto">
+                <form>
+
+                    <header class="login-header mb-3">
+                        <h1 class="text-center" style="font-size: 24px; letter-spacing: 1px; font-weight: bold; margin-bottom: 1rem;">Me mande um Email!</h1>
+                    </header>
+
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="comment" class="form-label">Comentário</label>
+                        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Escreva seu comentário aqui"></textarea>
+                    </div>
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button class="btn btn-primary shadow_btn" style="margin-top: 0.5rem;">Enviar</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 
   <footer id="footer">
     <div class="container text-center">
@@ -231,9 +266,9 @@
     window.addEventListener('scroll', function () {
         var scrollToTopBtn = document.getElementById("scrollToTopBtn");
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            scrollToTopBtn.classList.add('show'); /* Adiciona a classe 'show' para tornar o botão visível */
+            scrollToTopBtn.classList.add('show');
         } else {
-            scrollToTopBtn.classList.remove('show'); /* Remove a classe 'show' para tornar o botão invisível */
+            scrollToTopBtn.classList.remove('show');
         }
     });
 </script>
