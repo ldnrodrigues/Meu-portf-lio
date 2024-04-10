@@ -10,7 +10,7 @@ body {
 .banner {
     position: relative;
     width: 100%;
-    height: 700px;
+    height: 100%;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -33,10 +33,6 @@ body {
     margin-top: 7.5rem;
     box-sizing: border-box;
     z-index: 1;
-}
-
-.acento {
-    color: rgb(0,140,255);
 }
 
 .shadow_btn {
@@ -167,32 +163,54 @@ body {
     color: #ffffff;
     padding: 0 .5em;
     line-height: 1.5em;
-    background-color: #4D4D4D;
+    background-color: #1E1E1E;
 }
 
+/* Estilos para o formulário */
 .form-signin {
     margin: auto;
     width: 330px;
-    background-color: #000000;
-    transition: box-shadow 280ms cubic-bezier(.4,0,.2,1);
-    position: relative;
-    display: grid;
-    border-radius: 8px;
-    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
-    max-width: 400px;
-    padding: 1rem;
+    background-color: #222222; /* Fundo branco com transparência */
+    border-radius: 10px; /* Arredondamento das bordas */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 2rem;
+    backdrop-filter: blur(10px); /* Efeito de desfoque para simular vidro */
 }
 
-.form-signin .form-floating:focus-within {
-    z-index: 2;
+.form-signin .form-floating {
+    margin-bottom: 20px; /* Espaçamento entre os campos de entrada */
 }
 
-.form-signin input[type="email"] {
-    margin-bottom: 10px;
-    border-color: #535353;
-    background-color: #0D1117;
-    color: #ffffff;
+.form-signin input[type="email"],
+.form-signin textarea {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #333;
+    border-radius: 5px;
+    padding: 10px; /* Espaçamento interno */
 }
+
+.form-signin input[type="email"]::placeholder,
+.form-signin textarea::placeholder {
+    color: rgba(0, 0, 0, 0.5); /* Cor do espaço reservado */
+}
+
+/* Estilo para o botão */
+.btn-primary {
+    background-color: #008CFF; /* Cor de fundo */
+    border-color: #008CFF; /* Cor da borda */
+    color: #fff; /* Cor do texto */
+    border-radius: 5px; /* Arredondamento das bordas */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Transição suave */
+}
+
+.btn-primary:hover {
+    background-color: #0069D9; /* Cor de fundo ao passar o mouse */
+    border-color: #0062CC; /* Cor da borda ao passar o mouse */
+}
+
 
 #comment {
     margin-bottom: 10px;
