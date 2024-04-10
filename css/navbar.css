@@ -14,12 +14,8 @@
 }
 
 .navbar-btn {
-    font-size: 12px; /* Ajuste o tamanho conforme necessário */
-    padding: 10px 10px !important; /* Ajuste o padding conforme necessário */
+    font-size: 12px;
+    padding: 10px 10px !important;
     margin-right: 2rem;
     margin-bottom: 1.5rem;
-}
-
-.navbar {
-    background-color: transparent;
 }
