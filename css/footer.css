@@ -8,7 +8,6 @@ footer {
 .titulo-footer {
     color: #ffffff;
     font-size: 22px;
-    margin-right: 8rem;
 }
 
 .redes-sociais {
@@ -38,7 +37,7 @@ footer {
     height: 50px;
     position: fixed;
     right: 70px;
-    bottom: 7.5rem;
+    bottom: 8rem;
     width: 50px;
     opacity: 0;
     transition: opacity 0.3s ease;
