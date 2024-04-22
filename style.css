@@ -17,7 +17,6 @@ p,a,h1,h2,h3,h4,h5,h6 {
     position: relative;
     width: 100%;
     height: 95vh;
-    overflow: hidden;
 }
 
 .banner video {
@@ -29,35 +28,24 @@ p,a,h1,h2,h3,h4,h5,h6 {
     object-fit: cover;
 }
 
-.content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 72%;
-    padding: 50px;
-    margin-left: 10rem;
-    margin-top: 7.5rem;
-    box-sizing: border-box;
-    z-index: 1;
-}
-
 .shadow_btn {
     margin-top: 1.5rem;
     padding: 10px 20px;
     border: none;
     font-size: 17px;
+    text-decoration: none;
     color: #fff;
     border-radius: 7px;
     letter-spacing: 2px;
     font-weight: 700;
     text-transform: uppercase;
     transition: box-shadow 0.3s ease-in-out; 
-    background-color: #008CFF;
-    box-shadow: 0 0 25px rgb(0,140,255);
+    background-color: #0070CC;
+    box-shadow: 0 0 25px rgba(0, 112, 204, 1);
 }
 
 .shadow_btn:hover {
-    box-shadow: 0 0 25px rgba(0, 140, 255, 0.6);
+    box-shadow: 0 0 25px rgba(0, 112, 204, 0.6);
 }
 
 @keyframes changeColor {
@@ -233,17 +221,12 @@ p,a,h1,h2,h3,h4,h5,h6 {
 
 @media (max-width: 991px) {
 
-    .content {
-        position: absolute;
-        top: 0;
-        left: 0;
-        padding: 5px;
-        padding-left: 2.5rem;
-        width: 100%;
-        margin-left: 0;
-        margin-top: 0;
-        box-sizing: border-box;
-        z-index: 1;
+    .intro {
+        margin-left: 0.5rem !important;
+    }
+
+    .banner-desktop {
+        display: none;
     }
 
     .banner video {
