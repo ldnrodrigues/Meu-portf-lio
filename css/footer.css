@@ -27,10 +27,20 @@ footer {
     transform: translateY(-5px);
 }
 
+.email {
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    color: #fff;
+}
+
+.email:hover {
+    color: #0070CC;
+}
+
 .to-the-top {
-    background: rgb(0,140,255);
+    background: #0070CC;
     border-radius: 50%;
-    border-color: rgb(0,140,255);
+    border-color: #0070CC;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,14 +68,4 @@ footer {
 
 .to-the-top:hover .fa {
     transform: translateY(-5px);
-}
-
-.email {
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-    color: #fff;
-}
-
-.email:hover {
-    color: rgb(0,140,255);
 }
