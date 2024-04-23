@@ -17,6 +17,7 @@ p,a,h1,h2,h3,h4,h5,h6 {
     position: relative;
     width: 100%;
     height: 95vh;
+    overflow: hidden;
 }
 
 .banner video {
@@ -29,7 +30,6 @@ p,a,h1,h2,h3,h4,h5,h6 {
 }
 
 .shadow_btn {
-    margin-top: 1.5rem;
     padding: 10px 20px;
     border: none;
     font-size: 17px;
@@ -47,17 +47,6 @@ p,a,h1,h2,h3,h4,h5,h6 {
 .shadow_btn:hover {
     box-shadow: 0 0 25px rgba(0, 112, 204, 0.6);
 }
-
-@keyframes changeColor {
-    0% { fill: #008cff; }
-    50% { fill: #00b4fc; }
-    100% { fill: #008CFF; }
-}
-
-.animated-ellipse {
-    animation: changeColor 2.8s infinite;
-}
-
 
 #star-container {
     overflow: hidden;
@@ -167,56 +156,15 @@ p,a,h1,h2,h3,h4,h5,h6 {
     background-color: #000000;
 }
 
-/* Estilos para o formulário */
 .form-signin {
-    margin: auto;
-    width: 330px;
-    background-color: #222222; /* Fundo branco com transparência */
-    border-radius: 10px; /* Arredondamento das bordas */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    padding: 2rem;
-    backdrop-filter: blur(10px); /* Efeito de desfoque para simular vidro */
+    background-color: #202020;
+    border-radius: 10px;
+    padding: 30px;
 }
 
-.form-signin .form-floating {
-    margin-bottom: 20px; /* Espaçamento entre os campos de entrada */
-}
-
-.form-signin input[type="email"],
-.form-signin textarea {
-    border: none;
-    background-color: rgba(255, 255, 255, 0.3);
-    color: #333;
-    border-radius: 5px;
-    padding: 10px; /* Espaçamento interno */
-}
-
-.form-signin input[type="email"]::placeholder,
-.form-signin textarea::placeholder {
-    color: rgba(0, 0, 0, 0.5); /* Cor do espaço reservado */
-}
-
-/* Estilo para o botão */
-.btn-primary {
-    background-color: #008CFF; /* Cor de fundo */
-    border-color: #008CFF; /* Cor da borda */
-    color: #fff; /* Cor do texto */
-    border-radius: 5px; /* Arredondamento das bordas */
-    padding: 10px 20px; /* Espaçamento interno */
-    font-size: 16px; /* Tamanho da fonte */
-    transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Transição suave */
-}
-
-.btn-primary:hover {
-    background-color: #0069D9; /* Cor de fundo ao passar o mouse */
-    border-color: #0062CC; /* Cor da borda ao passar o mouse */
-}
-
-#comment {
-    margin-bottom: 10px;
-    border-color: #535353;
-    background-color: #0D1117;
-    color: #ffffff;
+/* Altera a cor dos placeholders para branco */
+::-webkit-input-placeholder {
+    color: white !important;
 }
 
 @media (max-width: 991px) {
@@ -229,8 +177,8 @@ p,a,h1,h2,h3,h4,h5,h6 {
         display: none;
     }
 
-    .banner video {
-        object-fit: cover; /* Ou outro valor desejado */
-        object-position: 83% /* Ajuste o posicionamento conforme necessário */
+    .form {
+        margin-bottom: 10rem;
+        width: 100%;
     }
 }
