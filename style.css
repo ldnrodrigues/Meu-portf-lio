@@ -9,7 +9,7 @@ body {
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-p,a,h1,h2,h3,h4,h5,h6 {
+p, a, h1, h2, h3, h4, h5, h6 {
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
@@ -17,6 +17,10 @@ p,a,h1,h2,h3,h4,h5,h6 {
     position: relative;
     width: 100%;
     overflow: hidden;
+}
+
+.banner-desktop {
+    display: block;
 }
 
 .banner-mobile {
@@ -33,7 +37,7 @@ p,a,h1,h2,h3,h4,h5,h6 {
     letter-spacing: 2px;
     font-weight: 700;
     text-transform: uppercase;
-    transition: box-shadow 0.3s ease-in-out; 
+    transition: box-shadow 0.3s ease-in-out;
     background-color: #0070CC;
     box-shadow: 0 0 25px rgba(0, 112, 204, 1);
 }
@@ -42,6 +46,7 @@ p,a,h1,h2,h3,h4,h5,h6 {
     box-shadow: 0 0 25px rgba(0, 112, 204, 0.6);
 }
 
+/* Star pattern */
 #star-container {
     overflow: hidden;
     position: relative;
@@ -49,7 +54,7 @@ p,a,h1,h2,h3,h4,h5,h6 {
 
 #star-pattern {
     background-image: url("https://assets.codepen.io/1468070/Star+Pattern+3.svg");
-    background-size: 10%;  
+    background-size: 10%;
     position: absolute;
     left: 50%;
     top: 0px;
@@ -64,16 +69,6 @@ p,a,h1,h2,h3,h4,h5,h6 {
     pointer-events: none;
 }
 
-@keyframes move-background {
-    0% {
-        background-position: 0% 0%;
-    }
-    
-    100% {
-        background-position: -100% 0%;
-    }
-}
-
 @keyframes pan {
     0% {
         background-position: 0% 0%;
@@ -83,6 +78,7 @@ p,a,h1,h2,h3,h4,h5,h6 {
     }
 }
 
+/* Card styles */
 .card {
     position: relative;
     overflow: hidden;
@@ -96,19 +92,18 @@ p,a,h1,h2,h3,h4,h5,h6 {
     flex-wrap: nowrap;
 }
 
+/* Languages logo */
 .Linguas-logo {
     display: flex;
     justify-content: space-evenly;
     align-items: baseline;
 }
 
+/* Image zoom */
 #image-zoom {
     display: block;
     overflow: hidden;
     position: relative;
-}
-
-#image-zoom {
     transition: transform 0.3s;
 }
 
@@ -117,6 +112,7 @@ p,a,h1,h2,h3,h4,h5,h6 {
     cursor: pointer;
 }
 
+/* HR text */
 .hr-text {
     line-height: 1em;
     position: relative;
@@ -150,13 +146,14 @@ p,a,h1,h2,h3,h4,h5,h6 {
     background-color: #000000;
 }
 
+/* Form styles */
 .form-signin {
     background-color: #202020;
     border-radius: 10px;
     padding: 30px;
 }
 
-/* Altera a cor dos placeholders para branco */
+/* Placeholder color */
 ::-webkit-input-placeholder {
     color: white !important;
 }
@@ -172,8 +169,9 @@ p,a,h1,h2,h3,h4,h5,h6 {
     }
 
     .banner-mobile {
-    height: 100%;
-    width: 100;    
+        display: block;
+        height: 100%;
+        width: 100%;
     }
 
     .form {
