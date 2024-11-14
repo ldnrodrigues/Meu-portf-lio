@@ -7,24 +7,39 @@ body {
     padding: 0;
     letter-spacing: 1px;
     font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: #000000 !important;
 }
 
 p, a, h1, h2, h3, h4, h5, h6 {
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-.banner img {
-    position: relative;
+.banner {
     width: 100%;
-    overflow: hidden;
-}
-
-.banner-desktop {
+    height: auto;
     display: block;
+    margin: 0 auto;
 }
 
-.banner-mobile {
-    display: none;
+    @media only screen and (min-width: 767px) {
+    .mobile-banner {
+        display: none;
+    }
+}
+
+    @media only screen and (max-width: 766px) {
+    .desktop-banner {
+        display: none;
+    }
+    .banner {
+        margin-top: 32rem;
+    }
+    .texto {
+        margin-top: 2rem;
+    }
+    .shadow_btn {
+        margin-top: 1rem;
+    }
 }
 
 .cv-button {
@@ -182,16 +197,6 @@ p, a, h1, h2, h3, h4, h5, h6 {
 
     .intro {
         margin-left: 0.5rem !important;
-    }
-
-    .banner-desktop {
-        display: none;
-    }
-
-    .banner-mobile {
-        display: block;
-        height: 100%;
-        width: 100%;
     }
 
     .form {
